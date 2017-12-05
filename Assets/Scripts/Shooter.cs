@@ -13,7 +13,7 @@ public class Shooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Detect if fire button is pressed
-		if (Input.GetButtonDown("Fire1"))
+		if (Input.GetKey ("joystick button 1"))
 		{	
 			if (!GameManager.gm.hasGameStarted) {
 				GameManager.gm.StartGame ();
